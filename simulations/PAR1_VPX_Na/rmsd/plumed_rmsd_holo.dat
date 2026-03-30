@@ -1,0 +1,6 @@
+# add CVs for monitoring, delete from pull code
+rmsd0: RMSD REFERENCE=/work/ks40pymo-PAR1_VPX_Na/ks40pymo-PAR1_VPX_Na-1759627201/ks40pymo-PAR1_VPX_Na-1756361133/simulations/PAR1_VPX_Na/rmsd/VPX_inactive_dpxxy.pdb TYPE=OPTIMAL
+rmsd1: RMSD REFERENCE=/work/ks40pymo-PAR1_VPX_Na/ks40pymo-PAR1_VPX_Na-1759627201/ks40pymo-PAR1_VPX_Na-1756361133/simulations/PAR1_VPX_Na/rmsd/VPX_inactive_con.pdb TYPE=OPTIMAL
+rmsd2: RMSD REFERENCE=/work/ks40pymo-PAR1_VPX_Na/ks40pymo-PAR1_VPX_Na-1759627201/ks40pymo-PAR1_VPX_Na-1756361133/simulations/PAR1_VPX_Na/rmsd/VPX_active_con.pdb TYPE=OPTIMAL
+		
+PRINT STRIDE=1 ARG=rmsd0,rmsd1,rmsd2 FILE=colvar_rmsd
